@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
+
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon_io/favicon-16x16.png">
@@ -11,26 +12,24 @@
     <title>Hush Bed & Breakfast</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <div class="nav-container">
             <a href="index.html" class="logo">
                 <h1>HUSH BED & BREAKFAST</h1>
             </a>
-            <nav>
-                <ul class="nav-list">
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="#">ONZE KAMERS</a></li>
-                    <li><a href="#">OVER ONS</a></li>
-                    <li><a href="#">CONTACT</a></li>
-                    <li class="dropdown">
-                        <a href="#">ONZE MOGELIJKHEDEN</a>
-                        <ul class="dropdown-content">
-                            <li><a href="#">BRUILOFT</a></li>
-                            <li><a href="#">BOEK EEN KAMER</a></li>
-                        </ul>
-                    </li>
-                </ul>
+            <nav class="nav-list">
+                    <a href="index.html">HOME</a>
+                    <a href="#">ONZE KAMERS</a>
+                    <a href="#">OVER ONS</a>
+                    <a href="#">CONTACT</a>
+                    <a href="#" class="dropdownBtn">ONZE MOGELIJKHEDEN</a>
+                    <div class="dropdown-content">
+                        <a href="#">BRUILOFT</a>
+                        <a href="#">BOEK EEN KAMER</a>
+                    </div>
+                    
                 <div class="menu-icon">
                     <span></span>
                     <span></span>
@@ -43,8 +42,8 @@
     <section class="hero">
         <div class="content">
             <h2>HUSH</h2>
-            <p>BED & BREAKFAST</p>
-            <p>Persoonlijke aandacht en een luxe hotelervaring.</p>
+            <p class="BBText">BED & BREAKFAST</p>
+            <p class="sloganText">Persoonlijke aandacht en een luxe hotelervaring.</p>
             <button>BOEK JOUW VERBLIJF</button>
         </div>
     </section>
@@ -56,4 +55,5 @@
 
     <script src="script.js" defer></script>
 </body>
+
 </html>
