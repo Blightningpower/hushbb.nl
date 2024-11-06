@@ -94,7 +94,7 @@ nav {
 	/* Vloeiende overgang */
 }
 
-.dropdownBtn:hover + .dropdown-content,
+.dropdownBtn:hover+.dropdown-content,
 .dropdown-content:hover {
 	opacity: 1;
 	max-height: 500px;
@@ -105,9 +105,7 @@ nav {
 	flex: 1;
 	padding: 0 10px;
 	font-size: 14px;
-  }
-  
-  
+}
 
 .menu-icon {
 	display: none;
@@ -175,6 +173,9 @@ nav {
 	position: relative;
 	z-index: 2;
 	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 
@@ -205,19 +206,20 @@ nav {
 	font-size: small;
 }
 
-.hero .content button {
-	margin-top: 20px;
+.hero .content a {
 	padding: 10px 20px;
+	margin-top: 10rem;
 	background-color: rgba(0, 0, 0, 0.4);
 	border: 2px solid #fff;
 	color: #fff;
-	font-size: 16px;
+	font-size: 14px;
 	cursor: pointer;
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
 	word-spacing: 2px;
+	position: absolute;
 }
 
-.hero .content button:hover {
+.hero .content a:hover {
 	color: var(--hushBlack);
 	background-color: rgba(255, 255, 255, 0.4);
 	border: 3px solid var(--hushBlack);
@@ -225,6 +227,56 @@ nav {
 }
 
 .content-section {
-	padding: 60px 20px;
 	text-align: center;
+}
+
+.alignImgAndText img {
+	width: 50vw;
+	height: 60vh;
+}
+
+[alt="hottub&sauna.png"] {
+	float: inline-start;
+}
+
+.alignImgAndText {
+	display: -webkit-box;
+	max-width: -webkit-fill-available;
+}
+
+.flexItems {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	align-items: center;
+	max-width: 50vw;
+	justify-content: center;
+}
+
+.alignImgAndText h2 {
+	max-width: fit-content;
+	text-transform: uppercase;
+	font-weight: 300;
+	margin-top: 90px;
+	margin-bottom: 10px;
+	min-width: 20vw;
+	text-align: left;
+}
+
+.rtl {
+	display: flex;
+	flex-direction: row-reverse;
+}
+
+.alignImgAndText p {
+	max-width: 20vw;
+	text-align: left;
+	line-height: 20px;
+}
+
+.horizontalLine {
+	border-bottom: 2px solid black;
+	outline: none;
+	width: 100px;
+	transform: translateX(-7.3vw);
 }
