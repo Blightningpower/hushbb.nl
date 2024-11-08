@@ -26,10 +26,18 @@ header {
 	position: fixed;
 	width: 100%;
 	background-color: rgba(0, 0, 0, 0.5);
-	color: #fff;
+	color: var(--hushWhite);
 	line-height: 60px;
 	transition: background-color 0.3s ease;
 	z-index: 1000;
+}
+
+h1,
+h2,
+h3 {
+	text-transform: uppercase;
+	font-weight: 300;
+	margin-bottom: 1rem;
 }
 
 header.scrolled {
@@ -52,6 +60,7 @@ header.scrolled {
 	letter-spacing: 1px;
 	font-weight: normal;
 	color: var(--hushWhite);
+	margin: 0;
 }
 
 nav {
@@ -66,7 +75,7 @@ nav {
 }
 
 .nav-list a {
-	color: #fff;
+	color: var(--hushWhite);
 	font-weight: bold;
 	font-size: 16px;
 	margin-right: 20px;
@@ -117,7 +126,7 @@ nav {
 	display: block;
 	width: 30px;
 	height: 3px;
-	background-color: #fff;
+	background-color: var(--hushWhite);
 	margin: 4px 0;
 	border-radius: 10px;
 }
@@ -143,11 +152,11 @@ nav {
 	}
 
 	.menu-icon.active span {
-		background-color: #fff;
+		background-color: var(--hushWhite);
 	}
 }
 
-.hero {
+#hero {
 	position: relative;
 	height: 100vh;
 	background: url('img/Hush Bed & Breakfast.png') no-repeat center center/cover;
@@ -157,7 +166,7 @@ nav {
 	text-align: center;
 }
 
-.hero::before {
+#hero::before {
 	content: '';
 	position: absolute;
 	top: 0;
@@ -169,7 +178,7 @@ nav {
 	z-index: 1;
 }
 
-.hero * {
+#hero * {
 	position: relative;
 	z-index: 2;
 	text-align: center;
@@ -179,7 +188,7 @@ nav {
 }
 
 
-.hero .content h2 {
+#hero .content h2 {
 	font-family: Montserrat;
 	letter-spacing: 0.25em;
 	direction: rtl;
@@ -192,8 +201,8 @@ nav {
 	transform: translateX(6px);
 }
 
-.hero .content p {
-	color: #fff;
+#hero .content p {
+	color: var(--hushWhite);
 	margin: 10px auto;
 	max-width: fit-content;
 }
@@ -206,12 +215,12 @@ nav {
 	font-size: small;
 }
 
-.hero .content a {
+#hero .content a {
 	padding: 10px 20px;
 	margin-top: 10rem;
 	background-color: rgba(0, 0, 0, 0.4);
-	border: 2px solid #fff;
-	color: #fff;
+	border: 2px solid var(--hushWhite);
+	color: var(--hushWhite);
 	font-size: 14px;
 	cursor: pointer;
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
@@ -219,20 +228,20 @@ nav {
 	position: absolute;
 }
 
-.hero .content a:hover {
+#hero .content a:hover {
 	color: var(--hushBlack);
 	background-color: rgba(255, 255, 255, 0.4);
 	border: 3px solid var(--hushBlack);
 	box-shadow: none;
 }
 
-.content-section {
+#content-section {
 	text-align: center;
 }
 
 .alignImgAndText img {
 	width: 50vw;
-	height: 60vh;
+	height: 47vh;
 }
 
 [alt="hottub&sauna.png"] {
@@ -248,16 +257,16 @@ nav {
 	display: flex;
 	flex-direction: column;
 	width: 100%;
-	align-items: center;
-	max-width: 50vw;
+	align-items: flex-start;
+	margin: auto;
 	justify-content: center;
+	max-width: fit-content;
 }
 
 .alignImgAndText h2 {
 	max-width: fit-content;
 	text-transform: uppercase;
 	font-weight: 300;
-	margin-top: 90px;
 	margin-bottom: 10px;
 	min-width: 20vw;
 	text-align: left;
@@ -275,8 +284,128 @@ nav {
 }
 
 .horizontalLine {
-	border-bottom: 2px solid black;
+	border-bottom: 2px solid var(--hushBlack);
 	outline: none;
-	width: 100px;
-	transform: translateX(-7.3vw);
+	width: 60px;
+	margin-bottom: 2rem;
+}
+
+.enjoyBreakfast {
+	background-color: var(--hushBlack);
+	color: var(--hushWhite);
+	padding: 5%;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+}
+
+.enjoyBreakfast h3 {
+	font-weight: 300;
+	max-width: fit-content;
+	margin-bottom: 1rem;
+}
+
+.enjoyBreakfast .horizontalLine {
+	border-bottom: 2px solid var(--hushWhite);
+}
+
+.enjoyBreakfast p {
+	text-align: left;
+}
+
+.flexSection {
+	max-width: 35vw;
+	margin: auto;
+}
+
+.alignHorizontalLine {
+	max-width: fit-content;
+	display: flex;
+	flex-direction: column;
+}
+
+.ourRooms {
+	padding: 5%;
+}
+
+.kamerButton {
+	text-decoration: none;
+	font-style: italic;
+	margin-bottom: 2rem;
+	padding: 1%;
+	border-radius: 3px;
+	margin-top: 2rem;
+	border: 2px solid var(--hushBlack);
+	max-width: fit-content;
+	min-width: 15vw;
+	min-height: 25vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
+	position: relative;
+	overflow: hidden;
+}
+
+.kamerButton:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	/* Zorgt ervoor dat het filter onzichtbaar is wanneer er geen hover is */
+	transition: opacity 0.3s ease;
+	/* Voeg een overgang toe voor een soepel effect */
+	z-index: 1;
+	/* Zorg ervoor dat het filter zich onder de tekst bevindt */
+	background-color: var(--hushWhite);
+}
+
+.kamerButton:hover:before {
+	opacity: 0.8;
+}
+
+.kamerButton:hover .buttonText {
+	background-color: #f5f5f600;
+	opacity: 0.8;
+	color: var(--hushBlack);
+	font-weight: 600;
+}
+
+.buttonText {
+	background-color: #3f4d40;
+	color: var(--hushWhite);
+	padding: 2%;
+	border-radius: 2px;
+	z-index: 2;
+}
+
+.apartmentButton {
+	background-image: url(img/Apartment.png);
+}
+
+.cottageButton {
+	background-image: url(img/Cottage.png);
+}
+
+.roomButton {
+	background-image: url(img/Room.png);
+}
+
+.poolhouse1Button {
+	background-image: url(img/Poolhouse1.png);
+}
+
+.poolhouse2Button {
+	background-image: url(img/Poolhouse2.png);
+}
+
+.roomButtonGrid {
+    display: flex;
+    justify-content: space-between;
+	margin-top: 5rem;
 }
