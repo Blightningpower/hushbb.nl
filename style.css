@@ -132,41 +132,69 @@ nav {
 }
 
 @media only screen and (max-width: 1010px) {
-	.nav-list {
-		display: none;
-		flex-direction: column;
-		position: absolute;
-		top: 60px;
-		right: 0;
-		background-color: #000;
-		width: 100%;
-		text-align: right;
+
+	header {
+		transition: 0.5s;
 	}
 
-	.nav-list.active {
-		display: flex;
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        text-align: right;
+		background-color: rgba(0, 0, 0, 0.5);
+		transition: 0.5s;
+    }
+
+	.firstNavButton {
+		border-top: unset !important;
 	}
 
-	.menu-icon {
-		display: flex;
+	.nav-list li {
+		border-top: 2px solid white;
+		border-width: medium;
+		min-width: 10rem;
+		max-width: 14rem;
+		text-align: center;
 	}
 
-	.menu-icon.active span {
-		background-color: var(--hushWhite);
+	.nav-list a {
+		margin: 0;
 	}
+
+    .nav-list.active {
+        display: flex;
+    }
+
+	.nav-list.active.scrolled {
+		background-color: black;
+		border-top: 1px solid var(--hushWhite); /* Maintain your existing styling */
+	}
+	
+    .menu-icon {
+        display: flex; /* Zorgt ervoor dat de menu-icon zichtbaar wordt op kleinere schermen */
+    }
+
+    .menu-icon.active span {
+        background-color: var(--hushWhite);
+    }
 }
 
-#hero {
+
+.hero {
 	position: relative;
 	height: 100vh;
-	background: url('img/Hush Bed & Breakfast.png') no-repeat center center/cover;
+	background: url('img/Hush Bed & Breakfast.png') no-repeat center center / cover;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
 }
 
-#hero::before {
+.hero::before {
 	content: '';
 	position: absolute;
 	top: 0;
@@ -178,7 +206,7 @@ nav {
 	z-index: 1;
 }
 
-#hero * {
+.hero * {
 	position: relative;
 	z-index: 2;
 	text-align: center;
@@ -188,8 +216,7 @@ nav {
 }
 
 
-#hero .content h2 {
-	font-family: Montserrat;
+.hero .content h2 {
 	letter-spacing: 0.25em;
 	direction: rtl;
 	color: var(--hushWhite);
@@ -201,7 +228,7 @@ nav {
 	transform: translateX(6px);
 }
 
-#hero .content p {
+.hero .content p {
 	color: var(--hushWhite);
 	margin: 10px auto;
 	max-width: fit-content;
@@ -215,7 +242,7 @@ nav {
 	font-size: small;
 }
 
-#hero .content a {
+.hero .content a {
 	padding: 10px 20px;
 	margin-top: 10rem;
 	background-color: rgba(0, 0, 0, 0.4);
@@ -228,7 +255,7 @@ nav {
 	position: absolute;
 }
 
-#hero .content a:hover {
+.hero .content a:hover {
 	color: var(--hushBlack);
 	background-color: rgba(255, 255, 255, 0.4);
 	border: 3px solid var(--hushBlack);
@@ -286,11 +313,11 @@ nav {
 .horizontalLine {
 	border-bottom: 2px solid var(--hushBlack);
 	outline: none;
-	width: 60px;
+	width: 80px;
 	margin-bottom: 2rem;
 }
 
-.enjoyBreakfast {
+.shortBlackSection {
 	background-color: var(--hushBlack);
 	color: var(--hushWhite);
 	padding: 5%;
@@ -299,17 +326,17 @@ nav {
 	justify-content: center;
 }
 
-.enjoyBreakfast h3 {
+.shortBlackSection h3 {
 	font-weight: 300;
 	max-width: fit-content;
 	margin-bottom: 1rem;
 }
 
-.enjoyBreakfast .horizontalLine {
+.shortBlackSection .horizontalLine {
 	border-bottom: 2px solid var(--hushWhite);
 }
 
-.enjoyBreakfast p {
+.shortBlackSection p {
 	text-align: left;
 }
 
@@ -324,8 +351,9 @@ nav {
 	flex-direction: column;
 }
 
-.ourRooms {
+.bigWhiteSection {
 	padding: 5%;
+	background-color: var(--hushWhite);
 }
 
 .kamerButton {
@@ -339,8 +367,7 @@ nav {
 	max-width: fit-content;
 	min-width: 15vw;
 	min-height: 25vh;
-	background-repeat: no-repeat;
-	background-size: cover;
+	background: no-repeat center center / cover;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -374,6 +401,7 @@ nav {
 	opacity: 0.8;
 	color: var(--hushBlack);
 	font-weight: 600;
+	font-size: 0.848vw;
 }
 
 .buttonText {
@@ -382,6 +410,7 @@ nav {
 	padding: 2%;
 	border-radius: 2px;
 	z-index: 2;
+	font-size: 0.875vw;
 }
 
 .apartmentButton {
@@ -408,4 +437,36 @@ nav {
     display: flex;
     justify-content: space-between;
 	margin-top: 5rem;
+}
+
+.removeMargin {
+	margin: 0;
+}
+
+.noPadding {
+	padding: unset;
+	margin: 0;
+	display: flex;
+}
+
+.noPadding img {
+	min-height: 100%;
+	max-width: 50%;
+}
+
+.backgroundText {
+	min-width: 50%;
+	padding: 5%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin: auto;
+}
+
+.backgroundText h2 {
+	text-align: center;
+}
+
+.backgroundText .alignHorizontalLine{
+	margin-bottom: 2em;
 }
