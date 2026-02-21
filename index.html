@@ -1,179 +1,296 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="nl">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Hush B&amp;B</title>
 
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon_io/favicon-16x16.png">
 
-    <title>Hush Bed & Breakfast</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-    <header>
-        <div class="nav-container">
-            <a href="index.html" class="logo">
-                <h1>HUSH BED & BREAKFAST</h1>
+    <!-- HEADER -->
+    <header class="site-header" id="siteHeader">
+        <div class="header-inner container">
+            <a class="brand" href="#top" aria-label="Hush Bed & Breakfast">
+                HUSH BED &amp; BREAKFAST
             </a>
-            <nav>
-                <ul class="nav-list">
-                    <li class="firstNavButton"><a href="index.html">HOME</a></li>
-                    <li><a href="#">ONZE KAMERS</a></li>
-                    <li><a href="#">OVER ONS</a></li>
-                    <li><a href="#">CONTACT</a></li>
-                    <li><a href="#" class="dropdownBtn">ONZE MOGELIJKHEDEN</a></li>
-                    <div class="dropdown-content">
-                        <a href="#">BRUILOFT</a>
-                        <a href="#">BOEK EEN KAMER</a>
-                    </div>
-                </ul>
-            </nav>
-            <div class="menu-icon">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+
+            <button class="burger" id="burger" type="button" aria-label="Menu openen" aria-expanded="false">
+                <span class="burger-box">
+                    <span class="burger-inner"></span>
+                </span>
+            </button>
         </div>
+
+        <!-- Overlay menu -->
+        <nav class="overlay-menu" id="overlayMenu" aria-label="Hoofdnavigatie">
+            <ul class="overlay-links">
+                <li><a href="#top" class="overlay-link">HOME</a></li>
+                <li><a href="#kamers" class="overlay-link">ONZE KAMERS</a></li>
+                <li><a href="#overons" class="overlay-link">OVER ONS</a></li>
+                <li><a href="#contact" class="overlay-link">CONTACT</a></li>
+
+                <li class="overlay-dropdown">
+                    <button class="overlay-link overlay-link-btn" type="button" aria-expanded="false">
+                        ONZE MOGELIJKHEDEN <span class="caret">▾</span>
+                    </button>
+                    <ul class="overlay-submenu">
+                        <li><a href="https://booking.roomraccoon.nl/hushbb/nl/" class="overlay-sublink">BOEK KAMER</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
     </header>
 
+    <main id="top">
+        <!-- HERO -->
+        <section class="hero">
+            <div class="hero-bg" aria-hidden="true"></div>
+            <div class="hero-overlay" aria-hidden="true"></div>
 
-    <section class="bigWhiteSection hero">
-        <div class="content">
-            <h2>HUSH</h2>
-            <p class="BBText">BED & BREAKFAST</p>
-            <p class="sloganText">Persoonlijke aandacht en een luxe hotelervaring.</p>
-            <a href="https://booking.roomraccoon.nl/hushbb/nl/">BOEK JOUW VERBLIJF</a>
-        </div>
-    </section>
+            <div class="hero-content container reveal reveal--fade is-visible">
+                <!-- hero meteen zichtbaar (geen scroll-reveal nodig) -->
+                <h1 class="hero-title">HUSH</h1>
+                <p class="hero-subtitle">BED &amp; BREAKFAST</p>
+                <p class="hero-tagline">Persoonlijke aandacht en een luxe hotelervaring.</p>
 
-    <section id="content-section">
-        <div class="alignImgAndText">
-            <img src="img/hottub&sauna.png" alt="hottub&sauna.png">
-            <div class="flexItems">
-                <h2>Welkom in onze B&B</h2>
-                <div class="horizontalLine"></div>
+                <a class="hero-cta" href="https://booking.roomraccoon.nl/hushbb/nl/">BOEK JOUW VERBLIJF</a>
+            </div>
+        </section>
+
+        <!-- WELKOM (split 50/50) -->
+        <section class="split reveal">
+            <div class="split-media split-media--bw" style="background-image:url('img/BOXED WATER IS BETTER.png');"
+                aria-hidden="true"></div>
+            <div class="split-text">
+                <h2 class="kicker">WELKOM IN ONZE B&amp;B</h2>
+                <div class="divider"></div>
+                <p>Wij, Ashraf en Nana hopen jullie binnenkort te mogen verwelkomen in onze B&amp;B.</p>
+            </div>
+        </section>
+
+        <!-- ARTICLE (donker blok) -->
+        <section class="section-dark article reveal">
+            <div class="container article-inner">
+                <h2 class="article-title">HUSH OP INDEBUURT.NL</h2>
+                <p class="article-subtitle">Zoals gezien op tv: Bed &amp; Breakfast</p>
+                <p class="article-lead">
+                    Helmonders Nana en Ashraf deden mee aan tv-show Bed &amp; Breakfast: ‘Uiteindelijk vergaten we de
+                    camera’s’
+                </p>
+
+                <div class="article-card reveal" data-delay="1">
+                    <div class="article-image" style="background-image:url('img/nana&ashraf.png');" aria-hidden="true">
+                    </div>
+                    <div class="article-body">
+                        <p>
+                            Nana (52) en Ashraf Armanyous (56) runnen sinds maart 2024 Hush Bed & Breakfast in Helmond.
+                            Dit jaar gebeurde er iets opmerkelijks: ze werden benaderd om mee te doen aan het populaire
+                            tv-programma Bed and breakfast van Omroep Max. “Waar zijn we in hemelsnaam aan begonnen?
+                        </p>
+                        <a class="article-link"
+                            href="https://indebuurt.nl/helmond/helmonders/helmonders-nana-en-ashraf-deden-mee-aan-tv-show-bed-breakfast-uiteindelijk-vergaten-we-de-cameras~326574/?referrer=https%3A%2F%2Fwww.hushbb.nl%2F"
+                            target="_blank" rel="noopener">LEES HET ARTIKEL HIER</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- “GASTEN LATEN GENIETEN” (split 50/50, foto rechts) -->
+        <section class="split split--reverse reveal">
+            <div class="split-media" style="background-image:url('img/zwembad.png');" aria-hidden="true"></div>
+            <div class="split-text">
+                <h2 class="kicker">“GASTEN LATEN GENIETEN”</h2>
+                <div class="divider"></div>
                 <p>
-                    Wij, Ashraf en Nana hopen jullie binnenkort te mogen verwelkomen in onze B&B.
+                    Overnachten in onze HUSH Bed &amp; Breakfast betekent genieten. We hebben vijf verschillende kamers.
+                    Elke overnachting is weer anders, want al onze kamers hebben een unieke en eigen stijl.
                 </p>
             </div>
-        </div>
+        </section>
 
-        <div class="alignImgAndText rtl">
-            <img src="img/zwembad.png" alt="zwembad.png">
-            <div class="flexItems">
-                <h2>Lekker Genieten!</h2>
-                <div class="horizontalLine"></div>
-                <p>
-                    Bij HUSH Bed & Breakfast staat genieten centraal.
-                    <br><br>
-                    Onze vijf unieke kamers bieden elk een eigen sfeer, zodat elke overnachting een bijzondere ervaring
-                    is.
-                    <br><br>
-                    Kom tot rust, ontdek de charme van iedere kamer, en ervaar hoe ontspannen overnachten kan zijn.
+        <!-- CULINAIR (donker, gecentreerd) -->
+        <section class="section-dark center-block reveal">
+            <div class="container center-block-inner">
+                <p class="micro-title">HUSH BED &amp; BREAKFAST</p>
+                <div class="divider divider--light"></div>
+                <h2 class="center-title">CULINAIR GENIETEN BIJ HUSH</h2>
+                <p class="center-text">
+                    Alle kamers zijn te boeken inclusief ontbijt. Dat ontbijtje kun je lekker in je kamer opeten in het
+                    zonnetje
+                    of gezellig in de serre.
                 </p>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="shortBlackSection">
-        <div class="flexSection">
-            <span class="alignHorizontalLine">
-                <h3>Culinair genieten bij HUSH</h3>
-                <div class="horizontalLine"></div>
-            </span>
-            <p>
-                Begin je dag goed met een heerlijk ontbijt in onze sfeervolle serre, waar je kunt genieten van de
-                gezellige
-                ambiance. Geef je de voorkeur aan wat meer privacy? Dan brengen we het ontbijt graag naar je kamer,
-                zodat je
-                kunt genieten in alle rust.
-            </p>
-        </div>
-    </section>
+        <!-- KAMERS -->
+        <hr class="section-divider" id="kamers" aria-hidden="true" />
+        <section class="section-light rooms reveal">
+            <div class="container">
+                <h2 class="section-title">ONZE KAMERS</h2>
+                <div class="divider"></div>
 
-    <section class="bigWhiteSection ourRooms">
-        <div class="flexSection">
-            <span class="alignHorizontalLine">
-                <h3>Onze kamers</h3>
-                <div class="horizontalLine"></div>
-            </span>
-            <p>
-                Geniet van een prachtig uitzicht op onze groene tuin of kies voor een verblijf direct aan het zwembad.
-                Ga
-                je voor een knusse cottage of een stijlvolle kamer met en-suite badkamer? Bij ons is alles mogelijk!
-            </p>
-            <br>
-            <p>
-                Wil je extra ontspannen in de hottub of sauna? Laat het ons weten, en we regelen het graag voor je! Voor
-                het gebruik van deze faciliteiten geldt een toeslag per kamer.
-            </p>
-            <br>
-            <p>
-                Alle kamers bieden vrij toegang tot het zwembad en onze groene tuin. Zin in een uitstapje? De omgeving
-                van Helmond biedt prachtige natuur om te verkennen, ideaal voor een fijne fiets- of wandeltocht.
-            </p>
-        </div>
+                <p class="rooms-text">
+                    Prachtig zicht op onze groene tuin of verblijf je liever direct aan het zwembad? En ga jij voor een
+                    knusse
+                    cottage of liever voor een en-suite badkamer? Het kan allemaal!
+                </p>
 
-        <div class="roomButtonGrid">
-            <a href="html/apartment.html" class="kamerButton apartmentButton"><span class="buttonText">Bekijk het Hush
-                    Apartment!</span></a>
+                <p class="rooms-text">
+                    Genieten van hottub en/of sauna? Laat het ons weten en wij regelen dit voor jou! Voor elke kamer
+                    geldt een
+                    toeslag voor deze faciliteiten.
+                </p>
 
-            <a href="html/cottage.html" class="kamerButton cottageButton"><span class="buttonText">Bekijk de Hush
-                    Cottage!</span></a>
+                <p class="rooms-text">
+                    Alle kamers mogen vrij gebruikmaken van het zwembad en de tuin. Mocht je eropuit willen: Helmond
+                    heeft
+                    heerlijke natuur waar je lekker kunt fietsen of wandelen.
+                </p>
 
-            <a href="html/hush-room.html" class="kamerButton roomButton"><span class="buttonText">Bekijk de Hush
-                    Room!</span></a>
+                <div class="rooms-grid">
+                    <a class="room-card reveal" data-delay="1" href="html/apartment.html"
+                        style="background-image:url('img/Apartment.png');">
+                        <span>BEKIJK DE HUSH APARTMENT</span>
+                    </a>
+                    <a class="room-card reveal" data-delay="2" href="html/cottage.html"
+                        style="background-image:url('img/Cottage.png');">
+                        <span>BEKIJK DE COTTAGE</span>
+                    </a>
+                    <a class="room-card reveal" data-delay="3" href="html/room.html"
+                        style="background-image:url('img/Room.png');">
+                        <span>BEKIJK DE HUSH ROOM</span>
+                    </a>
+                    <a class="room-card reveal" data-delay="4" href="html/poolhouse1.html"
+                        style="background-image:url('img/Poolhouse1.png');">
+                        <span>BEKIJK HET POOLHOUSE 1</span>
+                    </a>
+                    <a class="room-card reveal" data-delay="5" href="html/poolhouse2.html"
+                        style="background-image:url('img/Poolhouse2.png');">
+                        <span>BEKIJK HET POOLHOUSE 2</span>
+                    </a>
+                </div>
+            </div>
+        </section>
 
-            <a href="html/poolhouse-1-en-2.html" class="kamerButton poolhouse1Button"><span class="buttonText">Bekijk de
-                    Hush
-                    Poolhouse 1!</span></a>
+        <!-- QUOTE / BANNER (donker) -->
+        <section class="section-dark quote reveal">
+            <div class="container quote-inner">
+                <div class="divider divider--light"></div>
+                <h2 class="quote-text">WIJ HOPEN JOU SNEL TE MOGEN VERWELKOMEN<br>IN ONZE LUXE BED &amp; BREAKFAST</h2>
+            </div>
+        </section>
 
-            <a href="html/poolhouse-1-en-2.html" class="kamerButton poolhouse2Button"><span class="buttonText">Bekijk de
-                    Hush
-                    Poolhouse 2!</span></a>
+        <!-- ONZE B&B (split 50/50) -->
+        <hr class="section-divider" id="overons" aria-hidden="true" />
+        <section class="split reveal">
+            <div class="split-media split-media--bw" style="background-image:url('img/HushBB_Grey.png');"
+                aria-hidden="true"></div>
+            <div class="split-text split-text--center">
+                <h2 class="kicker">ONZE B&amp;B</h2>
+                <p class="subkicker">EEN BEETJE ACHTERGROND</p>
+                <div class="divider"></div>
+                <p><strong>HUSH Bed &amp; Breakfast is een gezellige B&amp;B, gelegen aan de rand van Helmond.</strong>
+                </p>
+                <p>We hopen jou snel te zien!</p>
+                <p>Ashraf &amp; Nana</p>
+            </div>
+        </section>
 
-        </div>
-    </section>
+        <!-- ✅ VOLG ONS -->
+        <hr class="section-divider" id="contact" aria-hidden="true" />
+        <section class="social-hero reveal reveal--fade">
+            <div class="social-bg" style="background-image:url('img/zwembad.png');" aria-hidden="true"></div>
+            <div class="social-overlay" aria-hidden="true"></div>
 
-    <section class="shortBlackSection">
-        <div class="flexSection">
-            <span class="alignHorizontalLine">
-                <h3>Ontdek de charme. Ervaar de rust.</h3>
-                <div class="horizontalLine removeMargin"></div>
-            </span>
+            <div class="social-content container">
+                <h2 class="social-title">VOLG ONS</h2>
+                <p class="social-sub">NEEM CONTACT OP VIA:</p>
 
-        </div>
-    </section>
+                <div class="social-icons" aria-label="Social links">
+                    <a href="https://www.instagram.com/hushbedbreakfast/" class="social-icon" aria-label="Instagram"
+                        target="_blank" rel="noopener">
+                        <img src="img/insta_ico.png" alt="Instagram">
+                    </a>
 
-    <section class="bigWhiteSection noPadding">
-        <img src="img/HushBB_Grey.png" alt="HushBB_Grey.png">
+                    <a href="https://www.facebook.com/hushbedandbreakfast" class="social-icon" aria-label="Facebook"
+                        target="_blank" rel="noopener">
+                        <img src="img/facebook_ico.png" alt="Facebook">
+                    </a>
 
-        <div class="backgroundText">
-            <h2>Onze B&B</h2>
-            <span class="alignHorizontalLine">
-                <h3>Een Warm Welkom in Helmond</h3>
-                <div class="horizontalLine"></div>
-            </span>
+                    <a href="mailto:info@hushbb.nl" class="social-icon" aria-label="E-mail">
+                        <img src="img/mail_ico.png" alt="E-mail">
+                    </a>
 
-            <p>
-                HUSH Bed & Breakfast is een charmante, huiselijke plek waar gastvrijheid centraal staat. Gelegen aan de
-                rand van het pittoreske Helmond, bieden wij een oase van rust en ontspanning, omringd door prachtige
-                natuur.
-            </p>
-            <br>
-            <p>We kijken ernaar uit om je binnenkort te verwelkomen en je een onvergetelijk verblijf te bezorgen.</p>
-            <br><br><br><br>
-            <p>Met vriendelijke groet,</p>
-            <br>
-            <p>Ashraf & Nana</p>
-        </div>
+                    <a href="tel:0031615553646" class="social-icon" aria-label="WhatsApp" target="_blank"
+                        rel="noopener">
+                        <img src="img/whatsapp_ico.png" alt="WhatsApp">
+                    </a>
+                </div>
 
+            </div>
+        </section>
 
-    </section>
+        <!-- MAP + CONTACT CARD -->
+        <section class="map-section">
+            <div class="map-row">
+                <div class="map-frame">
+                    <iframe title="Hush Bed & Breakfast - Hortsedijk 15" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        src="https://www.google.com/maps?q=Hortsedijk%2015,%205708%20HA%20Helmond&z=16&output=embed">
+                    </iframe>
+                </div>
+
+                <aside class="map-card">
+                    <h2>HUSH BED &amp; BREAKFAST</h2>
+                    <div class="map-card-img" style="background-image:url('img/Hush%20Bed%20%26%20Breakfast.png');">
+                    </div>
+                    <p class="map-card-address">
+                        Hortsedijk 15<br>
+                        5708 HA Helmond
+                    </p>
+                </aside>
+            </div>
+        </section>
+
+        <!-- LOGO + EMAIL (wit vlak) -->
+        <section class="section-light logo-contact reveal" id="boek">
+            <div class="container logo-contact-inner">
+                <div class="logo-mark">
+                    <img src="img/Hush Bed &amp; Breakfast LOGO_DarkGreen.png" alt="Hush Bed &amp; Breakfast logo"
+                        class="logo-img">
+                </div>
+
+                <p class="logo-address">Hortsedijk 15, 5708 HA Helmond</p>
+
+                <a class="pill" href="mailto:info@hushbb.nl">info@hushbb.nl</a>
+
+                <p class="small-center">
+                    WIJ KIJKEN ER NAAR UIT U OP ONZE LOCATIE TE MOGEN VERWELKOMEN !
+                </p>
+
+                <a class="outline-btn" href="html/boekingsvoorwaarden.html">Boekingsvoorwaarden</a>
+            </div>
+        </section>
+
+        <!-- KVK / PRIVACY (donker vlak) -->
+        <section class="section-dark legal reveal">
+            <div class="container legal-inner">
+                <p class="legal-text">
+                    KVK: 17160826<br>
+                    BTW-Nummer: NL812934180B01
+                </p>
+                <a class="outline-btn outline-btn--light" href="html/privacyverklaring.html">Privacyverklaring</a>
+            </div>
+        </section>
+    </main>
 
     <script src="script.js" defer></script>
 </body>
