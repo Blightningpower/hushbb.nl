@@ -18,9 +18,9 @@ function getAssetBase() {
   return isInHtmlFolder() ? ".." : ".";
 }
 
-// partials zitten in Website/partials (boven hushbb.nl)
+// partials zitten in hushbb.nl/partials
 function getPartialBase() {
-  return isInHtmlFolder() ? "../.." : "..";
+  return isInHtmlFolder() ? ".." : ".";
 }
 
 // Fix paths inside injected header/footer (img + inline background-image + links)
