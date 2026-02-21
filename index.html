@@ -15,39 +15,7 @@
 
 <body>
     <!-- HEADER -->
-    <header class="site-header" id="siteHeader">
-        <div class="header-inner container">
-            <a class="brand" href="#top" aria-label="Hush Bed & Breakfast">
-                HUSH BED &amp; BREAKFAST
-            </a>
-
-            <button class="burger" id="burger" type="button" aria-label="Menu openen" aria-expanded="false">
-                <span class="burger-box">
-                    <span class="burger-inner"></span>
-                </span>
-            </button>
-        </div>
-
-        <!-- Overlay menu -->
-        <nav class="overlay-menu" id="overlayMenu" aria-label="Hoofdnavigatie">
-            <ul class="overlay-links">
-                <li><a href="#top" class="overlay-link">HOME</a></li>
-                <li><a href="#kamers" class="overlay-link">ONZE KAMERS</a></li>
-                <li><a href="#overons" class="overlay-link">OVER ONS</a></li>
-                <li><a href="#contact" class="overlay-link">CONTACT</a></li>
-
-                <li class="overlay-dropdown">
-                    <button class="overlay-link overlay-link-btn" type="button" aria-expanded="false">
-                        ONZE MOGELIJKHEDEN <span class="caret">▾</span>
-                    </button>
-                    <ul class="overlay-submenu">
-                        <li><a href="https://booking.roomraccoon.nl/hushbb/nl/" class="overlay-sublink">BOEK KAMER</a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-    </header>
+    <div id="siteHeaderMount"></div>
 
     <main id="top">
         <!-- HERO -->
@@ -203,94 +171,10 @@
                 <p>Ashraf &amp; Nana</p>
             </div>
         </section>
-
-        <!-- ✅ VOLG ONS -->
-        <hr class="section-divider" id="contact" aria-hidden="true" />
-        <section class="social-hero reveal reveal--fade">
-            <div class="social-bg" style="background-image:url('img/zwembad.png');" aria-hidden="true"></div>
-            <div class="social-overlay" aria-hidden="true"></div>
-
-            <div class="social-content container">
-                <h2 class="social-title">VOLG ONS</h2>
-                <p class="social-sub">NEEM CONTACT OP VIA:</p>
-
-                <div class="social-icons" aria-label="Social links">
-                    <a href="https://www.instagram.com/hushbedbreakfast/" class="social-icon" aria-label="Instagram"
-                        target="_blank" rel="noopener">
-                        <img src="img/insta_ico.png" alt="Instagram">
-                    </a>
-
-                    <a href="https://www.facebook.com/hushbedandbreakfast" class="social-icon" aria-label="Facebook"
-                        target="_blank" rel="noopener">
-                        <img src="img/facebook_ico.png" alt="Facebook">
-                    </a>
-
-                    <a href="mailto:info@hushbb.nl" class="social-icon" aria-label="E-mail">
-                        <img src="img/mail_ico.png" alt="E-mail">
-                    </a>
-
-                    <a href="tel:0031615553646" class="social-icon" aria-label="WhatsApp" target="_blank"
-                        rel="noopener">
-                        <img src="img/whatsapp_ico.png" alt="WhatsApp">
-                    </a>
-                </div>
-
-            </div>
-        </section>
-
-        <!-- MAP + CONTACT CARD -->
-        <section class="map-section">
-            <div class="map-row">
-                <div class="map-frame">
-                    <iframe title="Hush Bed & Breakfast - Hortsedijk 15" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"
-                        src="https://www.google.com/maps?q=Hortsedijk%2015,%205708%20HA%20Helmond&z=16&output=embed">
-                    </iframe>
-                </div>
-
-                <aside class="map-card">
-                    <h2>HUSH BED &amp; BREAKFAST</h2>
-                    <div class="map-card-img" style="background-image:url('img/Hush%20Bed%20%26%20Breakfast.png');">
-                    </div>
-                    <p class="map-card-address">
-                        Hortsedijk 15<br>
-                        5708 HA Helmond
-                    </p>
-                </aside>
-            </div>
-        </section>
-
-        <!-- LOGO + EMAIL (wit vlak) -->
-        <section class="section-light logo-contact reveal" id="boek">
-            <div class="container logo-contact-inner">
-                <div class="logo-mark">
-                    <img src="img/Hush Bed &amp; Breakfast LOGO_DarkGreen.png" alt="Hush Bed &amp; Breakfast logo"
-                        class="logo-img">
-                </div>
-
-                <p class="logo-address">Hortsedijk 15, 5708 HA Helmond</p>
-
-                <a class="pill" href="mailto:info@hushbb.nl">info@hushbb.nl</a>
-
-                <p class="small-center">
-                    WIJ KIJKEN ER NAAR UIT U OP ONZE LOCATIE TE MOGEN VERWELKOMEN !
-                </p>
-
-                <a class="outline-btn" href="html/boekingsvoorwaarden.html">Boekingsvoorwaarden</a>
-            </div>
-        </section>
-
-        <!-- KVK / PRIVACY (donker vlak) -->
-        <section class="section-dark legal reveal">
-            <div class="container legal-inner">
-                <p class="legal-text">
-                    KVK: 17160826<br>
-                    BTW-Nummer: NL812934180B01
-                </p>
-                <a class="outline-btn outline-btn--light" href="html/privacyverklaring.html">Privacyverklaring</a>
-            </div>
-        </section>
     </main>
+
+    <!-- FOOTER -->
+    <div id="siteFooterMount"></div>
 
     <script src="script.js" defer></script>
 </body>

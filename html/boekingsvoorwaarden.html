@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Boekingsvoorwaarden - Hush</title>
+  <title>Hush Boekingsvoorwaarden</title>
 
   <!-- Favicons (pagina staat in /html, dus ../) -->
   <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon_io/apple-touch-icon.png">
@@ -16,41 +16,8 @@
 </head>
 
 <body>
-  <!-- HEADER (zelfde als home/apartment, met juiste links vanaf /html) -->
-  <header class="site-header" id="siteHeader">
-    <div class="header-inner container">
-      <a class="brand" href="../index.html#top" aria-label="Hush Bed & Breakfast">
-        HUSH BED &amp; BREAKFAST
-      </a>
-
-      <button class="burger" id="burger" type="button" aria-label="Menu openen" aria-expanded="false">
-        <span class="burger-box">
-          <span class="burger-inner"></span>
-        </span>
-      </button>
-    </div>
-
-    <!-- Overlay menu -->
-    <nav class="overlay-menu" id="overlayMenu" aria-label="Hoofdnavigatie">
-      <ul class="overlay-links">
-        <li><a href="../index.html#top" class="overlay-link">HOME</a></li>
-        <li><a href="../index.html#kamers" class="overlay-link">ONZE KAMERS</a></li>
-        <li><a href="../index.html#overons" class="overlay-link">OVER ONS</a></li>
-        <li><a href="../index.html#contact" class="overlay-link">CONTACT</a></li>
-
-        <li class="overlay-dropdown">
-          <button class="overlay-link overlay-link-btn" type="button" aria-expanded="false">
-            ONZE MOGELIJKHEDEN <span class="caret">▾</span>
-          </button>
-          <ul class="overlay-submenu">
-            <li>
-              <a href="https://booking.roomraccoon.nl/hushbb/nl/" class="overlay-sublink">BOEK KAMER</a>
-            </li>
-          </ul>
-        </li>
-      </ul>
-    </nav>
-  </header>
+  <!-- HEADER -->
+  <div id="siteHeaderMount"></div>
 
   <main id="top">
 
@@ -78,71 +45,89 @@
         <div class="divider divider--light"></div>
 
         <!-- Tekst styling (alleen hier, zodat je style.css niet hoeft te wijzigen) -->
-        <div
-          style="text-align:left; max-width:860px; margin:0 auto; font-size:14px; line-height:2.0; opacity:.94;">
+        <div style="text-align:left; max-width:860px; margin:0 auto; font-size:14px; line-height:2.0; opacity:.94;">
 
-          <h2
-            style="margin:0 0 12px; letter-spacing:.18em; text-transform:uppercase; font-size:16px;">
+          <h2 style="margin:0 0 12px; letter-spacing:.18em; text-transform:uppercase; font-size:16px;">
             Huisregels
           </h2>
 
           <ul style="margin:0 0 28px 18px; padding:0;">
-            <li>Hush Bed &amp; Breakfast is beschreven in de website https://www.hushbb.nl. Deze site is met grote zorg samengesteld, maar er kunnen verschillen zijn tussen de website en de actuele situatie op de B&amp;B. Denk hierbij aan foto’s van het interieur, die wellicht niet meer actueel zijn ten tijde van het verblijf. Aan dergelijke verschillen kunnen geen rechten worden ontleend.</li>
+            <li>Hush Bed &amp; Breakfast is beschreven in de website https://www.hushbb.nl. Deze site is met grote zorg
+              samengesteld, maar er kunnen verschillen zijn tussen de website en de actuele situatie op de B&amp;B. Denk
+              hierbij aan foto’s van het interieur, die wellicht niet meer actueel zijn ten tijde van het verblijf. Aan
+              dergelijke verschillen kunnen geen rechten worden ontleend.</li>
             <li>Het is niet toegestaan om derden gebruik te laten maken van de B&amp;B.</li>
             <li>De B&amp;B dient netjes en opgeruimd achtergelaten te worden.</li>
             <li>Roken is niet toegestaan in het gehele pand. Buiten mag er gerookt worden.</li>
-            <li>Parkeren is mogelijk op eigen terrein dat uitsluitend voor onze gasten is gereserveerd. Parkeren is op eigen risico.</li>
+            <li>Parkeren is mogelijk op eigen terrein dat uitsluitend voor onze gasten is gereserveerd. Parkeren is op
+              eigen risico.</li>
             <li>Bij ongepast gedrag zijn wij genoodzaakt om het verblijf (voortijdig) te beëindigen.</li>
             <li>Hush Bed &amp; Breakfast kan om uw legitimatie vragen t.b.v. registratie.</li>
             <li>Check-in is vanaf 16:00 uur. Check-out is tot 10:00 uur.</li>
-            <li>Sleutels dienen bij vertrek ingeleverd te worden. Bij verlies kunnen kosten in rekening worden gebracht.</li>
+            <li>Sleutels dienen bij vertrek ingeleverd te worden. Bij verlies kunnen kosten in rekening worden gebracht.
+            </li>
             <li>Na 22:00 uur vragen we rekening te houden met de omgeving zodat iedereen in rust kan genieten.</li>
             <li>Honden zijn op aanvraag welkom. Kosten: €16,- per hond per nacht (max. 2 honden per accommodatie).</li>
-            <li>De kachel/open haard mag gebruikt worden tegen betaling, met gebruikmaking van door ons verstrekt hout. Volg a.u.b. de instructies.</li>
-            <li>Sauna-barrel en jacuzzi zijn op aanvraag beschikbaar tegen betaling van €35,- (per sessie). Combi-tarief: €60,-.</li>
+            <li>De kachel/open haard mag gebruikt worden tegen betaling, met gebruikmaking van door ons verstrekt hout.
+              Volg a.u.b. de instructies.</li>
+            <li>Sauna-barrel en jacuzzi zijn op aanvraag beschikbaar tegen betaling van €35,- (per sessie).
+              Combi-tarief: €60,-.</li>
             <li>Zwembad en tuin zijn toegankelijk voor alle gasten van de B&amp;B.</li>
             <li>Kinderen zonder zwemdiploma mogen niet zonder toezicht zwemmen.</li>
-            <li>Sluit na gebruik het dek van het zwembad (dicht/rollen) om warmte te behouden. Het zwembad is verwarmd van 15 mei t/m 1 september.</li>
-            <li>Per geboekte kamer is maximaal 1 auto gratis parkeren inbegrepen. Extra auto’s: €7,- per extra auto per nacht.</li>
+            <li>Sluit na gebruik het dek van het zwembad (dicht/rollen) om warmte te behouden. Het zwembad is verwarmd
+              van 15 mei t/m 1 september.</li>
+            <li>Per geboekte kamer is maximaal 1 auto gratis parkeren inbegrepen. Extra auto’s: €7,- per extra auto per
+              nacht.</li>
           </ul>
 
-          <h2
-            style="margin:0 0 12px; letter-spacing:.18em; text-transform:uppercase; font-size:16px;">
+          <h2 style="margin:0 0 12px; letter-spacing:.18em; text-transform:uppercase; font-size:16px;">
             Annulering
           </h2>
 
           <ul style="margin:0 0 28px 18px; padding:0;">
-            <li>Bij annulering minimaal 48 uur vóór de aankomstdatum worden er geen kosten in rekening gebracht indien u geboekt hebt met annuleringsgarantie.</li>
-            <li>Bij annulering minder dan 48 uur vóór de aankomstdatum / no-show wordt het totale reserveringsbedrag in rekening gebracht.</li>
-            <li>Annuleren is mogelijk via e-mail (<a href="mailto:info@hushbb.nl" style="text-decoration:underline;">info@hushbb.nl</a>) of telefonisch/WhatsApp via +31 6 15 55 36 46.</li>
+            <li>Bij annulering minimaal 48 uur vóór de aankomstdatum worden er geen kosten in rekening gebracht indien u
+              geboekt hebt met annuleringsgarantie.</li>
+            <li>Bij annulering minder dan 48 uur vóór de aankomstdatum / no-show wordt het totale reserveringsbedrag in
+              rekening gebracht.</li>
+            <li>Annuleren is mogelijk via e-mail (<a href="mailto:info@hushbb.nl"
+                style="text-decoration:underline;">info@hushbb.nl</a>) of telefonisch/WhatsApp via +31 6 15 55 36 46.
+            </li>
           </ul>
 
-          <h2
-            style="margin:0 0 12px; letter-spacing:.18em; text-transform:uppercase; font-size:16px;">
+          <h2 style="margin:0 0 12px; letter-spacing:.18em; text-transform:uppercase; font-size:16px;">
             Aansprakelijkheid
           </h2>
 
           <ul style="margin:0 0 28px 18px; padding:0;">
-            <li>Hush Bed &amp; Breakfast draagt in geen geval enige verantwoordelijkheid voor diefstal/persoonlijk letsel/verlies of schade aan diens eigendommen.</li>
-            <li>Schade/vernieling/vermissing aangebracht aan de B&amp;B dient u altijd te melden. Hush Bed &amp; Breakfast is niet aansprakelijk voor kennelijke fouten op de website.</li>
-            <li>Gebruik van het zwembad is geheel op eigen risico; hiervoor wordt geen enkele aansprakelijkheid aanvaard.</li>
-            <li>Hush Bed &amp; Breakfast is gerechtigd om bij bijzondere omstandigheden de reservering te annuleren, denk hierbij aan verkoop pand, gezondheidsredenen, overmacht. Uiteraard zullen wij hier alles aan doen om dit in goede banen te leiden.</li>
+            <li>Hush Bed &amp; Breakfast draagt in geen geval enige verantwoordelijkheid voor diefstal/persoonlijk
+              letsel/verlies of schade aan diens eigendommen.</li>
+            <li>Schade/vernieling/vermissing aangebracht aan de B&amp;B dient u altijd te melden. Hush Bed &amp;
+              Breakfast is niet aansprakelijk voor kennelijke fouten op de website.</li>
+            <li>Gebruik van het zwembad is geheel op eigen risico; hiervoor wordt geen enkele aansprakelijkheid
+              aanvaard.</li>
+            <li>Hush Bed &amp; Breakfast is gerechtigd om bij bijzondere omstandigheden de reservering te annuleren,
+              denk hierbij aan verkoop pand, gezondheidsredenen, overmacht. Uiteraard zullen wij hier alles aan doen om
+              dit in goede banen te leiden.</li>
           </ul>
 
-          <h2
-            style="margin:0 0 12px; letter-spacing:.18em; text-transform:uppercase; font-size:16px;">
+          <h2 style="margin:0 0 12px; letter-spacing:.18em; text-transform:uppercase; font-size:16px;">
             Handhaving en Sancties
           </h2>
 
           <ul style="margin:0 0 28px 18px; padding:0;">
-            <li>Het is niet toegestaan om met meer personen in de kamer te verblijven dan waarvoor is geboekt. Bezoekers dienen de B&amp;B uiterlijk om 23:59 uur te verlaten.</li>
-            <li>Indien er na dit tijdstip extra personen aanwezig zijn, wordt dit aangemerkt als ongeoorloofde overnachting en kan er een boete worden opgelegd van €50,- per persoon per nacht.</li>
-            <li>Voor een extra auto die vooraf is aangemeld geldt het normale tarief van €7,- per kamer per nacht. Voor elk voertuig dat niet is aangemeld of hinderlijk geparkeerd staat, geldt een boete van €25,- per incident en/of dag.</li>
-            <li>Bij het moedwillig overtreden van de huisregels of het veroorzaken van ernstige overlast behoudt Hush Bed &amp; Breakfast zich het recht voor om het verblijf met onmiddellijke ingang te beëindigen, zonder recht op restitutie van verblijfskosten.</li>
+            <li>Het is niet toegestaan om met meer personen in de kamer te verblijven dan waarvoor is geboekt. Bezoekers
+              dienen de B&amp;B uiterlijk om 23:59 uur te verlaten.</li>
+            <li>Indien er na dit tijdstip extra personen aanwezig zijn, wordt dit aangemerkt als ongeoorloofde
+              overnachting en kan er een boete worden opgelegd van €50,- per persoon per nacht.</li>
+            <li>Voor een extra auto die vooraf is aangemeld geldt het normale tarief van €7,- per kamer per nacht. Voor
+              elk voertuig dat niet is aangemeld of hinderlijk geparkeerd staat, geldt een boete van €25,- per incident
+              en/of dag.</li>
+            <li>Bij het moedwillig overtreden van de huisregels of het veroorzaken van ernstige overlast behoudt Hush
+              Bed &amp; Breakfast zich het recht voor om het verblijf met onmiddellijke ingang te beëindigen, zonder
+              recht op restitutie van verblijfskosten.</li>
           </ul>
 
-          <h2
-            style="margin:0 0 12px; letter-spacing:.18em; text-transform:uppercase; font-size:16px;">
+          <h2 style="margin:0 0 12px; letter-spacing:.18em; text-transform:uppercase; font-size:16px;">
             Privacy
           </h2>
 
@@ -150,13 +135,14 @@
             <li>Hush Bed &amp; Breakfast gaat vertrouwelijk om met (bekendgemaakte) persoonsgegevens.</li>
           </ul>
 
-          <h2
-            style="margin:0 0 12px; letter-spacing:.18em; text-transform:uppercase; font-size:16px;">
+          <h2 style="margin:0 0 12px; letter-spacing:.18em; text-transform:uppercase; font-size:16px;">
             Veel plezier
           </h2>
 
           <ul style="margin:0 0 10px 18px; padding:0;">
-            <li>Hush Bed &amp; Breakfast staat voor hospitality. De basisregel is dan ook dat wij er alles aan doen om een prettig verblijf te bieden. Echter zijn er regels nodig om zaken in goede banen te leiden. Heeft u nog vragen n.a.v. onze boekingsvoorwaarden, neem dan gerust contact met ons op.</li>
+            <li>Hush Bed &amp; Breakfast staat voor hospitality. De basisregel is dan ook dat wij er alles aan doen om
+              een prettig verblijf te bieden. Echter zijn er regels nodig om zaken in goede banen te leiden. Heeft u nog
+              vragen n.a.v. onze boekingsvoorwaarden, neem dan gerust contact met ons op.</li>
           </ul>
 
           <p style="margin:22px 0 0; opacity:.92; font-size:14px;">Team Hush Bed &amp; Breakfast</p>
@@ -175,89 +161,10 @@
       </div>
     </section>
 
-    <!-- VOLG ONS -->
-    <hr class="section-divider" id="contact" aria-hidden="true" />
-    <section class="social-hero reveal reveal--fade">
-      <div class="social-bg" style="background-image:url('../img/zwembad.png');" aria-hidden="true"></div>
-      <div class="social-overlay" aria-hidden="true"></div>
-
-      <div class="social-content container">
-        <h2 class="social-title">VOLG ONS</h2>
-        <p class="social-sub">NEEM CONTACT OP VIA:</p>
-
-        <div class="social-icons" aria-label="Social links">
-          <a href="https://www.instagram.com/hushbedbreakfast/" class="social-icon" aria-label="Instagram"
-            target="_blank" rel="noopener">
-            <img src="../img/insta_ico.png" alt="Instagram">
-          </a>
-
-          <a href="https://www.facebook.com/hushbedandbreakfast" class="social-icon" aria-label="Facebook"
-            target="_blank" rel="noopener">
-            <img src="../img/facebook_ico.png" alt="Facebook">
-          </a>
-
-          <a href="mailto:info@hushbb.nl" class="social-icon" aria-label="E-mail">
-            <img src="../img/mail_ico.png" alt="E-mail">
-          </a>
-
-          <a href="tel:0031615553646" class="social-icon" aria-label="WhatsApp" target="_blank" rel="noopener">
-            <img src="../img/whatsapp_ico.png" alt="WhatsApp">
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- MAP + CONTACT CARD -->
-    <section class="map-section">
-      <div class="map-row">
-        <div class="map-frame">
-          <iframe title="Hush Bed & Breakfast - Hortsedijk 15" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-            src="https://www.google.com/maps?q=Hortsedijk%2015,%205708%20HA%20Helmond&z=16&output=embed">
-          </iframe>
-        </div>
-
-        <aside class="map-card">
-          <h2>HUSH BED &amp; BREAKFAST</h2>
-          <div class="map-card-img" style="background-image:url('../img/Hush%20Bed%20%26%20Breakfast.png');"></div>
-          <p class="map-card-address">
-            Hortsedijk 15<br>
-            5708 HA Helmond
-          </p>
-        </aside>
-      </div>
-    </section>
-
-    <!-- LOGO + EMAIL -->
-    <section class="section-light logo-contact reveal" id="boek">
-      <div class="container logo-contact-inner">
-        <div class="logo-mark">
-          <img src="../img/Hush%20Bed%20%26%20Breakfast%20LOGO_DarkGreen.png" alt="Hush Bed &amp; Breakfast logo"
-            class="logo-img">
-        </div>
-
-        <p class="logo-address">Hortsedijk 15, 5708 HA Helmond</p>
-        <a class="pill" href="mailto:info@hushbb.nl">info@hushbb.nl</a>
-
-        <p class="small-center">
-          WIJ KIJKEN ER NAAR UIT U OP ONZE LOCATIE TE MOGEN VERWELKOMEN !
-        </p>
-
-        <a class="outline-btn" href="boekingsvoorwaarden.html">Boekingsvoorwaarden</a>
-      </div>
-    </section>
-
-    <!-- LEGAL -->
-    <section class="section-dark legal reveal">
-      <div class="container legal-inner">
-        <p class="legal-text">
-          KVK: 17160826<br>
-          BTW-Nummer: NL812934180B01
-        </p>
-        <a class="outline-btn outline-btn--light" href="privacyverklaring.html">Privacyverklaring</a>
-      </div>
-    </section>
-
   </main>
+
+  <!-- FOOTER -->
+  <div id="siteFooterMount"></div>
 
   <script src="../script.js" defer></script>
 </body>
