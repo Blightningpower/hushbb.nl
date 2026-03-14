@@ -32,6 +32,12 @@ body {
 html {
 	overflow-y: auto;
 	overflow-x: hidden;
+	scroll-behavior: smooth; /* smooth scroll voor #anchors */
+}
+
+/* Zorg dat ankers niet onder de fixed header vallen */
+[id] {
+	scroll-margin-top: 80px;
 }
 
 body {
@@ -352,7 +358,7 @@ ul.overlay-submenu:hover .overlay-submenu li:hover .overlay-submenu a:hover {
 	font-size: 80px;
 	letter-spacing: .28em;
 	font-weight: 400;
-	width: 310px;
+	width: 740px;
 }
 
 .hero-subtitle {
@@ -1012,6 +1018,10 @@ ul.overlay-submenu:hover .overlay-submenu li:hover .overlay-submenu a:hover {
 }
 
 @media (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+
 	.reveal {
 		transition: none !important;
 		opacity: 1 !important;
@@ -1062,7 +1072,7 @@ ul.overlay-submenu:hover .overlay-submenu li:hover .overlay-submenu a:hover {
 @media (max-width: 560px) {
 	.hero-title {
 		font-size: 44px;
-		width: 170px;
+		width: 370px;
 	}
 
 	.hero-subtitle {
